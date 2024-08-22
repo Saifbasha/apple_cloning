@@ -1,0 +1,128 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: DM Sans, sans-serif;
+    /* overflow-y: hidden; */
+}
+#nav{
+    height: 100px;
+    /* border: 2px solid; */
+}
+#sub-nav{
+    /* border: 3px solid red; */
+    height: inherit;
+    width: 94%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sub-nav ol li+li span img{
+    height: 20px;
+    width: 30px;
+}
+#sub-nav ol li+li span{
+    /* width: 200px; */
+    display: flex;
+   
+}
+#sub-nav ol{
+    /* border: 3px solid green; */
+    width: 200px;
+    display: flex;
+    width: 280px;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+#sub-nav ol+ul{
+    /* border: 2px solid blue; */
+    list-style: none;
+    display: inline-flex;
+    width: 50%;
+    justify-content: space-between;
+    font-size: 18px;
+}
+#sub-nav ol+ul li{
+    cursor: pointer;
+}
+#sub-nav ol+ul li span{
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+}
+section{
+    /* border: 2px solid; */
+    width: 100%;
+    height: 550px;
+    padding-top: 30px;
+}
+section article{
+    /* border: 2px solid blue; */
+    height: inherit;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+#text{
+    /* border: 2px solid crimson; */
+    width: 500px;
+    color: #2f1c6a;
+}
+#text h1{
+    font-size: 35px;
+    
+}
+#text ol{
+    list-style: none;
+    font-size: 15px;
+}
+#text span{
+    display: flex;
+    font-size: 10px;
+}
+
+#img{
+    /* border: 2px solid yellow; */
+    width: 600px;
+    padding-top: 30px;
+}
+#img img{
+    height: 400px;
+    width: 600px;
+    /* padding:100px ; */
+}
+#btn button{
+    background-color:#2f1c6a ;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+}
+#btn button+button{
+    background-color: #ebe4ff;;
+   color: #2f1c6a;
+}
+#text span h1 sub{
+    font-size: 15px;
+}
+#text ol li::before{
+    content: "✔ ";
+    color: green;
+}
+#text ol li::after{
+    content: url();
+}
+aside{
+    display: flex;
+}
+aside p{
+    padding-top: 5px;
+}

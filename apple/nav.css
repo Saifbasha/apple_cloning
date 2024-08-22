@@ -1,0 +1,250 @@
+@import url(./section.css);
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+nav{
+    height: 50px;
+    width: 100%;
+    /* border: 2px solid red; */
+    background-color: rgba(22, 22, 23, .8);
+    position: sticky;
+    top: 0%;
+    z-index: 10;
+}
+#sub-nav{
+    height: inherit;
+    width: 70%;
+    margin: auto;
+    /* border: 2px solid green; */
+}
+#sub-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sub-nav ul li{
+    color: rgb(255, 255, 255,0.5);
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#sub-nav ul li svg{
+    fill: rgb(255, 255, 255,0.8);
+}
+#sub-nav ul li i{
+    font-size: 20px;
+}
+#discount{
+    /* border: 2px solid red; */
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#discount span{
+    color: rgb(0, 0, 255);
+}
+article{
+    width: 100%;
+    height: 90vh;
+    /* border: 2px solid green; */
+    position: relative;
+    cursor: pointer;
+}
+article img{
+   height: 100%;
+   transform: translateX(-800px);
+}
+article div{
+    position: absolute;
+    top: 7%;
+    left: 35%;
+   text-align: center;
+   color: #fff;
+}
+article div h1{
+    font-size: 60px;
+}
+article div p{
+    font-size: 30px;
+}
+article div button{
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: none;
+}
+aside{
+    /* border: 2px solid; */
+    width: 100%;
+    height: 95vh;
+    position: relative;
+    background-color: #eee;
+}
+aside figure svg{
+   filter: drop-shadow(2px 2px 2px #fff);
+}
+aside #pic1{
+    position: absolute;
+    top: 65px;
+    left: 450px;
+    z-index: 1;
+}
+aside #pic2 svg{
+    height: 10em;
+    width: 18em;
+    fill: #06c;
+    color: #fff;
+    position: absolute;
+    top: 70px;
+    left: 500px;
+    transform:rotate(-5deg);
+}
+aside #pic2 svg p{
+    font-size:90px ;
+    font-weight: bold;
+}
+aside #pic3 svg{
+    height: 2.5em;
+    width: 13em;
+    fill: #06c;
+    position: absolute;
+    top: 225px;
+    left: 600px;
+    transform:rotate(-2deg);
+    z-index: 1;
+}
+aside #pic3 svg p{
+    font-size:38px ;
+    color: #fff;
+}
+aside #pic4 svg{
+    height: 6em;
+    width: 15em;
+    fill: #06c;
+    position: absolute;
+    top: 270px;
+    left: 650px;
+    transform:rotate(5deg);
+    z-index: 1;
+}
+aside #pic4 svg p{
+    font-size:70px ;
+    color: #fff;
+    font-weight: bold;
+}
+aside #pic5 svg{
+    height: 7em;
+    width: 17em;
+    fill: #06c;
+    position: absolute;
+    top: 355px;
+    left: 570px;
+    transform:rotate(7deg);
+}
+aside #pic5 svg p{
+    font-size:60px ;
+    color: #fff;
+    font-weight: bold;
+}
+aside #pic6 svg{
+    height: 2.5em;
+    width: 15em;
+    fill: rgba(0,0,0,0.2);
+    position: absolute;
+    top: 460px;
+    left: 570px;
+   
+}
+aside #pic6 svg p{
+    font-size:30px ;
+    color: #000;
+    font-weight: bold;
+    align-items: center;
+}
+aside #pic7{
+    position: absolute;
+    top: 40px;
+    left: 700px;
+}
+aside #pic8{
+    position: absolute;
+    top: 330px;
+    left: 800px;
+    z-index: 2;
+}
+aside #pic9{
+    position: absolute;
+    top: 390px;
+    left: 670px;
+    z-index: 2;
+}
+aside #pic10{
+    position: absolute;
+    top: 200px;
+    left: 430px;
+    z-index: 2;
+}
+aside #pic11{
+    position: absolute;
+    top: 450px;
+    left: 770px;
+    z-index: 2;
+}
+aside button{
+    position: absolute;
+    top: 520px;
+    left: 650px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border:2px solid #00e ;
+}
+main{
+    width: 100%;
+    height: 90vh;
+    /* border: 2px solid red; */
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+}
+main img{
+    width: 100%;
+    height: 100%;
+    transform: scaleX(2);
+}
+main div{
+    position: absolute;
+    top: 8%;
+    left: 35%;
+    text-align: center;
+}
+main div h1{
+    font-size: 55px;
+}
+main div p{
+    font-size: 30px;
+    font-weight: 400;
+}
+main div button{
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: #06c;
+    font-size: 20px;
+    color: #fff;
+}
+main div button+button{
+    background-color: #000;
+    color: #06c;
+    border: 2px solid #06c;
+    margin-left: 20px;
+}
